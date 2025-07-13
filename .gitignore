@@ -1,0 +1,8 @@
+
+venv/
+*.pyc
+__pycache__/
+*.tflite
+*.h5
+node_modules/
+.DS_Store
