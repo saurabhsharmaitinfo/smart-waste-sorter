@@ -18,7 +18,7 @@ def init_db():
                 ('cardboard', 'Flatten and place in paper bin'),
                  ('glass', 'Glass: Place in glass container'),
                  ('metal', 'Metal: Clean and recycle in yellow bin'),
-                 ('paper', 'Paper: Place in paper bin'),
+                 ('paper', 'Paper: Place in paper bin (green)'),
                  ('plastic', 'Plastic: Rinse and place in blue bin'),
                  ('trash', 'Trash: No category, completely trashed, place in the dustbin')
             ]

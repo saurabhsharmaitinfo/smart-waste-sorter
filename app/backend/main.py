@@ -1,3 +1,4 @@
+from fastapi.middleware.cors import CORSMiddleware
 import cv2
 import numpy as np
 import tensorflow as tf
@@ -8,6 +9,13 @@ from io import BytesIO
 import os
 
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Load TFLite model
 try:

@@ -23,4 +23,4 @@ A computer vision-based app to classify household waste and provide recycling in
 
 ## Model Performance
 - Accuracy: [Insert from classification_report]
-- Classes: plastic, organic, metal, paper, glass, cardboard
+- Classes: 'cardboard', 'glass', 'metal', 'paper', 'plastic', 'trash'
