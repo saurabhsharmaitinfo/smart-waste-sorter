@@ -9,10 +9,9 @@ from io import BytesIO
 import os
 
 app = FastAPI()
-# allow_origins=["http://localhost:3000"],
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Temporary for Expo Go
+    allow_origins=["http://localhost:3000", "https://smart-waste-sorter-seven.vercel.app/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
