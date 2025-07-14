@@ -2,7 +2,8 @@ from fastapi.middleware.cors import CORSMiddleware
 import cv2
 import numpy as np
 #import tensorflow as tf
-import tensorflow.lite as tflite
+#import tensorflow.lite as tflite
+import tflite_runtime.interpreter as tflite
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from pydantic import BaseModel
 import sqlite3
