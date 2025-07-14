@@ -1,4 +1,4 @@
-# Waste Sorting Assistant
+# Smart Waste Sorter
 A computer vision-based app to classify household waste and provide recycling instructions.
 
 ## Setup
