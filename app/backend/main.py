@@ -1,7 +1,8 @@
 from fastapi.middleware.cors import CORSMiddleware
 import cv2
 import numpy as np
-import tensorflow as tf
+#import tensorflow as tf
+import tensorflow.lite as tflite
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from pydantic import BaseModel
 import sqlite3
@@ -21,7 +22,7 @@ app.add_middleware(
 try:
     if not os.path.exists('waste_classifier.tflite'):
         raise FileNotFoundError("Model file 'waste_classifier.tflite' not found")
-    interpreter = tf.lite.Interpreter(model_path='waste_classifier.tflite')
+    interpreter = tflite.Interpreter(model_path='waste_classifier.tflite')
     interpreter.allocate_tensors()
     input_details = interpreter.get_input_details()
     output_details = interpreter.get_output_details()
