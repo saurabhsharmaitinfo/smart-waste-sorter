@@ -48,7 +48,7 @@ import React, { useState } from 'react';
 
        return (
          <div style={{ textAlign: 'center', padding: '20px' }}>
-           <h1>Waste Sorting Assistant</h1>
+           <h1>Smart Waste Sorter</h1>
            <input
              type="file"
              accept="image/*"

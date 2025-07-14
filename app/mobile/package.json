@@ -1,5 +1,5 @@
 {
-  "name": "waste-sorting-mobile",
+  "name": "mobile",
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
@@ -11,7 +11,6 @@
     "lint": "expo lint"
   },
   "dependencies": {
-    "@expo/cli": "^0.24.20",
     "@expo/vector-icons": "^14.1.0",
     "@react-native-community/netinfo": "^11.4.1",
     "@react-navigation/bottom-tabs": "^7.3.10",
