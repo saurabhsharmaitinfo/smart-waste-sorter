@@ -14,9 +14,12 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:3000", 
                    "https://smart-waste-sorter-seven.vercel.app/",
-                   "https://smart-waste-sorter.vercel.app/"],
+                   "https://smart-waste-sorter.vercel.app/",
+                   "https://*.vercel.app", 
+                    "*"
+                    ],
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["*"],
 )
 
